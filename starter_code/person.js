@@ -3,6 +3,11 @@ class Person {
     this.name = name;
     this.originFloor = originFloor;
     this.destinationFloor = destinationFloor;
+    if (originFloor < destinationFloor) {
+      this.direction = 'up';
+    } else {
+      this.direction = 'down';
+    }
   }
 }
 
